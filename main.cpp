@@ -65,49 +65,27 @@ void variableDeclarations()
     int add = 1;
     int age = 28;
 
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-    ignoreUnused(add);
-    ignoreUnused(age);
-
     float kilos = 26.6f;
     float height = 1.76f;
     float speed = 105.f;
-
-    ignoreUnused(kilos);
-    ignoreUnused(height);
-    ignoreUnused(speed);
-
+    
     bool isRed = false;
     bool hasSound = true;
     bool isEmpty = false;
-
-    ignoreUnused(isRed);
-    ignoreUnused(hasSound);
-    ignoreUnused(isEmpty);
 
     char nameInitial = 'R';
     char city = 'M';
     char grade = 'C';
 
-    ignoreUnused(nameInitial);
-    ignoreUnused(city);
-    ignoreUnused(grade);
-
     double pi = 3.1415926535897932;
     double epsilon = 2.71828182845904523;
     double x = 3.912348239293;
 
-    ignoreUnused(pi);
-    ignoreUnused(epsilon);
-    ignoreUnused(x);
-
     unsigned int daysPassed = 345;
     unsigned int timeMinutes = 300;
     unsigned int numWordsRead = 1002;
-
-    ignoreUnused(daysPassed);
-    ignoreUnused(timeMinutes);
-    ignoreUnused(numWordsRead);
+    
+    ignoreUnused(number, add, age, kilos, height, speed, isRed, hasSound, isEmpty, nameInitial, city, grade, pi, epsilon, x, daysPassed, timeMinutes, numWordsRead);
     
 }
 
@@ -256,15 +234,8 @@ int main()
     //10)
     auto maxNumber = max(478393902, 785475389);
     
-    ignoreUnused(carRented);
-    ignoreUnused(result);
-    ignoreUnused(letter);
-    ignoreUnused(isPrime);
-    ignoreUnused(binary);
-    ignoreUnused(youngAge);
-    ignoreUnused(allowEat);
-    ignoreUnused(numSecs);
-    ignoreUnused(maxNumber);
+    ignoreUnused(carRented, result, letter, isPrime, binary, youngAge, allowEat, numSecs, maxNumber);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
