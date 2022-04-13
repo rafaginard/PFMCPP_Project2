@@ -124,43 +124,97 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
 /*
  1)
+ The function sum two numbers
  */
-
+ int sumTwoIntegers(int numA, int numB)
+{
+    ignoreUnused(numA, numB);
+    return {};
+}
+    
 /*
  2)
+The function prints on the screen an introduction of myself
  */
+void introduction()
+{
+    
+}
 
 /*
  3)
+The function returns the letter of the alphabet with the indicated position
  */
+char alphabetLetter(int numLetter = 1)
+{
+    ignoreUnused(numLetter);
+    return {};
+}
 
 /*
  4)
+The function checks if the number is prime.
  */
-
+bool checkIfPrimeNumber(int n)
+{
+    ignoreUnused(n);
+    return {};
+}
 /*
  5)
+The function returns the number in a binary form
  */
+int convertToBin(int num)
+{
+    ignoreUnused(num);
+    return {};
+}
 
 /*
  6)
+The function returns the youngest child.
  */
+int youngestChild(int ageChild1, int ageChild2, int ageChild3)
+{
+    ignoreUnused(ageChild1, ageChild2, ageChild3);
+    return {};
+}
 
 /*
  7)
+The function returns if there is chocolate in the fridge.
  */
-
+bool eatChocolate(int ouncesConsumed, int totalOunces)
+{
+    ignoreUnused(ouncesConsumed, totalOunces);
+    return {};
+}
 /*
  8)
  */
+void buyObjectOnAmazon(int idObject, int quantityObjects)
+{
+    ignoreUnused(idObject, quantityObjects);
+}
 
 /*
  9)
  */
+float numSecondsDuringLunch(float entryHourInSecods, float exitHourInSecods)
+{
+    ignoreUnused(entryHourInSecods, exitHourInSecods);
+    return {};
+}
 
 /*
  10)
  */
+unsigned int max(unsigned int num1, unsigned int num2)
+{
+    ignoreUnused(num1, num2);
+    return {};
+}
+
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -182,27 +236,35 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto result = sumTwoIntegers(2, 3);
     //2)
-    
+    introduction();
     //3)
-    
+    auto letter = alphabetLetter(9);
     //4)
-    
+    auto isPrime = checkIfPrimeNumber(7);
     //5)
-    
+    auto binary = convertToBin(1024);
     //6)
-    
+    auto youngAge = youngestChild(10, 12, 4);
     //7)
-    
+    auto allowEat = eatChocolate(4, 10);
     //8)
-    
+    buyObjectOnAmazon(1234, 10);
     //9)
-    
+    auto numSecs = numSecondsDuringLunch(1800, 2700);
     //10)
-    
+    auto maxNumber = max(478393902, 785475389);
     
     ignoreUnused(carRented);
+    ignoreUnused(result);
+    ignoreUnused(letter);
+    ignoreUnused(isPrime);
+    ignoreUnused(binary);
+    ignoreUnused(youngAge);
+    ignoreUnused(allowEat);
+    ignoreUnused(numSecs);
+    ignoreUnused(maxNumber);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
